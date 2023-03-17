@@ -2,7 +2,6 @@ package org.example;
 
 public class Calculator{
     // This program calculates integer nums.
-
     public  Calculator(){
     }
     public int add(int a, int b){

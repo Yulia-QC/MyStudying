@@ -24,18 +24,15 @@ public class Droid{
 
     public  void energyReport() {
         System.out.println("My battery level after prforming task is: " + batteryLevel + "%.");
-
     }
 
     public void energyTransfer(){
-
 
     }
 
     public String toString(){
         return "Hello, I’m the droid: " + name;
     }
-
 
     public static void main(String[]args){
         Droid codey = new Droid("Codey");
@@ -53,9 +50,7 @@ public class Droid{
         System.out.println(demy.batteryLevel + "%.");
         demy.energyReport();
 
-
     }
-
 
 }
 
