@@ -26,18 +26,34 @@ public class Order {
         }
     }
 
-    public double calculateShipping() {
-        if (shipping.equals("Regular")) {
-            return 0;
-        } else if (shipping.equals("Express")) {
-            // Add your code here
-            if (couponCode == "ship50"){
-                return 0.85;
-            }return 1.75;
+//    public double calculateShipping() {
+//        if (shipping.equals("Regular")) {
+//            return 0;
+//        } else if (shipping.equals("Express")) {
+//            // Add your code here
+//            if (couponCode == "ship50"){
+//                return 0.85;
+//            }return 1.75;
+//
+//        } else {
+//            return .50;
+//        }
+//    }
 
-        } else {
-            return .50;
+    public double calculateShipping() {
+        double shippingCost;
+        // declare switch statement here
+        switch (shipping){
+            case "Regular":
+                shippingCost = 0;
+                break;
+            case "Express":
+                shippingCost = 1.75;
+                break;
+            default:
+                shippingCost = 0.50;
         }
+        return shippingCost;
     }
 
     public static void main(String[] args) {
