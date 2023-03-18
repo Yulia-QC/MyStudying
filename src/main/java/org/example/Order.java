@@ -63,5 +63,12 @@ public class Order {
 
         book.ship();
         chemistrySet.ship();
+
+        Order myOrder = new Order(true, 10.50, "Express",null);
+        myOrder.ship();
+        Order vladaOrder = new Order(false,0.0,"Regular", "any");
+        vladaOrder.ship();
+        Order nikiOrder = new Order(true,0.0,"Any", "ship50");
+        nikiOrder.ship();
     }
 }
