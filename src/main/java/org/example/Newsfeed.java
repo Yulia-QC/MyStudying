@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Newsfeed {
 //    Newsfeed class to keep track of trending articles and their associated views and ratings.
     String[] trendingArticles;
@@ -10,6 +12,14 @@ public class Newsfeed {
         trendingArticles = initialArticles;
         views = initialViews;
         ratings = initialRatings;
+    }
+    public Newsfeed(){
+
+    }
+
+    public String[] getTopics(){
+        String[] topics = {"Opinion", "Tech", "Science", "Health"};
+        return topics;
     }
 
     public String getTopArticle(){
@@ -40,5 +50,11 @@ public class Newsfeed {
         robotTimes.viewArticle(2);
         System.out.println("The top article is " + robotTimes.getTopArticle());
         robotTimes.changeRating(3, 5);
+
+        Newsfeed sampleFeed = new Newsfeed();
+        String[] topics = sampleFeed.getTopics();
+        System.out.println(Arrays.toString(topics));
     }
+
+
 }
