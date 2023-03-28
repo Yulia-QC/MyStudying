@@ -9,26 +9,33 @@ public class ArrayTest {
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+//        Scanner scan = new Scanner(System.in);
+//
+//        // read size of the array
+//        System.out.print("Enter size of the array: ");
+//        int n = scan.nextInt();
+//
+//        // create an int array of size n
+//        int numbers[] = new int[n];
+//
+//        // take input for the array
+//        System.out.println("Enter array elements: ");
+//        for (int i = 0; i < n; ++i) {
+//            numbers[i] = scan.nextInt();
+//        }
 
-        // read size of the array
-        System.out.print("Enter size of the array: ");
-        int n = scan.nextInt();
-
-        // create an int array of size n
-        int numbers[] = new int[n];
-
-        // take input for the array
-        System.out.println("Enter array elements: ");
-        for (int i = 0; i < n; ++i) {
-            numbers[i] = scan.nextInt();
+        int[] numbers;
+        numbers = new int[20];
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = ((int)(Math.random() * 31) - 20);
+            System.out.println(numbers[i]);
         }
 
         // display negative numbers
         seperate(numbers);
 
         // close Scanner
-        scan.close();
+//        scan.close();
 
     }
     public static void printTripledNumbers(int[] arr) {
