@@ -25,8 +25,6 @@ public class ArrayTest2 {
         System.out.println("Initial Array: " + Arrays.toString(numbers));
         System.out.print("New Array: ");
 
-
-
     }
     }
 
