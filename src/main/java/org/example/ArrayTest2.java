@@ -1,7 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
-import java.util.Random;
+
 
 public class ArrayTest2 {
     static int[] numbers = {-1,2,-3,4,-5,6,-7,8,-9,10,-11,12,-13,14,-15,16,-17,18,-19,20};
@@ -20,10 +20,12 @@ public class ArrayTest2 {
         }
     }
 
+
     public static void main(String[] args) {
 
         System.out.println("Initial Array: " + Arrays.toString(numbers));
-        System.out.print("New Array: ");
+        tripledNums();
+        System.out.print("New Array: " + Arrays.toString(numbers));
 
     }
     }
